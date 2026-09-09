@@ -9,9 +9,7 @@ Simulate pump.fun bonding-curve and PumpSwap buys, sells, and trader PNL, all of
 No signup, no key needed.
 
 ```bash
-curl -X POST https://api.pumpsim.dev/v1/demo/buy/quote \
-  -H "Content-Type: application/json" \
-  -d '{"quote": "1"}'
+curl -X POST https://api.pumpsim.dev/v1/demo/buy/quote -H "Content-Type: application/json" -d "{\"quote\": \"1\"}"
 ```
 
 Real bonding-curve math, running live against a fresh coin.
