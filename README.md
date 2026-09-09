@@ -1,10 +1,12 @@
 # PumpSim API
 
-Simulate pump.fun bonding-curve and PumpSwap buys, sells, and trader PNL — off-chain, real curve math, zero SOL risk. Build and backtest trading bots or strategies without burning real SOL.
+Simulate pump.fun bonding-curve and PumpSwap buys, sells, and trader PNL, all off-chain with real curve math and zero SOL risk. Build and backtest trading bots or strategies without burning real SOL.
 
-Docs: https://docs.pumpsim.dev · Dashboard: https://pumpsim.dev/dashboard
+[Docs](https://docs.pumpsim.dev) · [Dashboard](https://pumpsim.dev/dashboard)
 
-## Try it right now — no signup, no key
+## Try it right now
+
+No signup, no key needed.
 
 ```bash
 curl -X POST https://api.pumpsim.dev/v1/demo/buy/quote \
@@ -39,7 +41,7 @@ const sell = await fetch("https://api.pumpsim.dev/v1/sim/sell/base", {
 console.log(`sold back for ${sell.trade.quote_out} lamports`);
 ```
 
-Every response shares the same envelope — `state` (feed it into your next call to chain trades), `stats`, `fees`, `trade`. Full reference: https://docs.pumpsim.dev/api-reference
+Every response shares the same envelope: `state` (feed it into your next call to chain trades), `stats`, `fees`, `trade`. Full reference: https://docs.pumpsim.dev/api-reference
 
 ## Why simulate instead of testing live
 
