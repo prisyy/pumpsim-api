@@ -45,6 +45,7 @@ Every response shares the same envelope: `state` (feed it into your next call to
 
 - No SOL spent, no wallet, no devnet faucet queue
 - Real bonding-curve/AMM math, not an approximation
+- Supports Custom Pairs (coins quoted against tokenized stocks, crypto, or other pump.fun coins) and Holder Rewards, not just SOL/USDC
 - Pull a real coin's live reserves by mint and backtest against actual on-chain state
 - Chain buys/sells to backtest a full strategy in milliseconds instead of minutes on-chain
 
